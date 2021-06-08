@@ -1,0 +1,139 @@
+:root {
+  --grey: #343436;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma,
+    Sans-Serif;
+  font-weight: normal;
+  color: #272727;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.codepen {
+  display: grid;
+  grid-template-rows: auto 1fr 1fr auto;
+}
+
+.codepen > * {
+  border: 1px solid black;
+}
+
+.code {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.pen {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  gap: 10px;
+  background: black;
+  border-bottom: 5px solid var(--grey);
+  color: white;
+  padding: 10px;
+}
+
+.preview {
+  display: grid;
+  height: 100em;
+}
+
+.button {
+  background: var(--grey);
+  border: 0;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  font-size: 15px;
+  position: relative;
+}
+
+.button--small {
+  font-size: 12px;
+  padding: 4px;
+}
+
+.button--dirty:before {
+  background: #ffc600;
+  display: block;
+  content: "";
+  height: 2px;
+  width: calc(100%-6px);
+  /* position: absolute; */
+  left: 3px;
+  top: 1px;
+}
+
+.editor__header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  padding: 5px;
+  background: rgba(0, 0, 0, 0.1);
+  gap: 10px;
+}
+
+.editor {
+  background: var(--grey);
+  color: white;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.editor__code {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.editor__number {
+  display: block;
+  padding: 0 10px;
+}
+
+.editor__input {
+  resize: none;
+  background: var(---grey);
+  border: none;
+  color: grey;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.setting {
+  padding: 5px;
+  background: black;
+  border-top: 1px solid grey;
+}
